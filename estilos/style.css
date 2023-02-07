@@ -125,6 +125,8 @@ form > input[type=submit]:hover{
     color: #4c6e6d;
     background-image: radial-gradient(#bbfdfb 50%, #4c9c9b 100%);
     height: 46px;
+    border-radius: 40px;
+    font-size: 1.1em;
     margin-top: 8px;
     margin-bottom: -3px;
     transform: translateY(-3px);
@@ -147,8 +149,9 @@ form > a.botao{
 
 form > a.botao:hover{
     background-color: #aaecea;
-    padding-top: 12px;
+    padding-top: 10px;
     height: 46px;
+    font-size: 1.1em;
     margin-top: 8px;
     margin-bottom: -3px;
     transform: translateY(-3px);
