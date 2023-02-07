@@ -114,15 +114,20 @@ form > input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #49a09d;
+    background-image: radial-gradient(#95d6d4 50%, #204948 100%);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
 form > input[type=submit]:hover{
-    background-color: #2f6866;
+    color: #4c6e6d;
+    background-image: radial-gradient(#bbfdfb 50%, #4c9c9b 100%);
+    height: 46px;
+    margin-top: 8px;
+    margin-bottom: -3px;
+    transform: translateY(-3px);
 }
 
 form > a.botao{
@@ -142,6 +147,11 @@ form > a.botao{
 
 form > a.botao:hover{
     background-color: #aaecea;
+    padding-top: 12px;
+    height: 46px;
+    margin-top: 8px;
+    margin-bottom: -3px;
+    transform: translateY(-3px);
 }
 
 form > a.botao > span{
