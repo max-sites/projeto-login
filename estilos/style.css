@@ -27,7 +27,6 @@ main{
 
 section#login{
     position: absolute;
-    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 
@@ -41,6 +40,8 @@ section#login{
 
     box-shadow: 0px 0px 10px #000000de;
 
+    /* Sempre que tiver uma animação ou uma transformação para fazer faça como ultima linha do seu seletor. */
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     /* faz com que a animação de uma suavizada */
     transition-timing-function: ease;
@@ -56,4 +57,93 @@ section#login > div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+form > div.campo{
+    display: block;
+    background-color: #5f2c82;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #5f2c82;
+    border-radius: 8px;
+    margin: 5px 0px;
+    
+}
+
+div.campo > label > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #72d1ce;
+    font-size: 1em;
+
+    /* Calculo Css (deixa o input com 100% menos o tamanho do span) */
+    width: calc(100% - 45px);
+
+    height: 100%;
+    
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+
+    /* Sempre que tiver uma animação ou uma transformação para fazer faça como ultima linha do seu seletor. */
+    transform: translateY(-12px);
+}
+
+/* A caixa que estiver com foco ficará branca */
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+/* acessando o botão de submit dentro do formulário */
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #2f6866;
+}
+
+form > a.botao{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 8px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: white;
+    color: #132e2d;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover{
+    background-color: #aaecea;
+}
+
+form > a.botao > span{
+    font-size: 0.8em;
 }
